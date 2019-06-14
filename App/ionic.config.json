@@ -1,0 +1,11 @@
+{
+  "name": "App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [{
+    "path": "/api",
+    "proxyUrl": "https://the-real-api-host.com"
+  }]
+}
