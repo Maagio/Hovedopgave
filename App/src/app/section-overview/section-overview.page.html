@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <!--<ion-title>SectionOverview</ion-title>-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div align="center">
+    <br/>
+    <!--<input
+            style="display: none"
+            type="file" (change)="onFileChanged($event)"
+            #fileInput>
+    <ion-button (click)="fileInput.click()">Select File</ion-button>-->
+    <div *ngIf="hidden">
+      <ion-list *ngFor="let item of sections">
+        <p>Sektions navn: {{item.name}}</p>
+        <ion-button (click)="GoToSection(item)">Gå til sektion</ion-button>
+      </ion-list>
+    </div>
+    <br>
+    <br>
+    <ion-label>Sektion navn </ion-label>
+    <input #name>
+    <br>
+    <ion-button (click)="CreateSection(name.value)">Opret ny sektion</ion-button>
+    <br/>
+    <br>
+    <!--<ion-button (click)="GetSections()">Upload billed test</ion-button>-->
+    <br>
+    <br>
+    <br>
+    <ion-button (click)="Logout()">Log ud</ion-button>
+  </div>
+</ion-content>

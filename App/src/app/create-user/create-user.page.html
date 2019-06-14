@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Opret bruger</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="CreateUser" align="center">
+    <br /><br><br>
+    <ion-label>Email </ion-label>
+    <input #email />
+    <br/>
+    <ion-label>Kodeord </ion-label>
+    <input #password/>
+    <br/>
+    <ion-button (click)="CreateUser(email.value, password.value)">Opret</ion-button>
+    <br><br><br><br><br>
+    <ion-button (click)="GoBack()">Gå tilbage</ion-button>
+  </div>
+</ion-content>
